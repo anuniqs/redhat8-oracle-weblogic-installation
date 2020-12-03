@@ -1,37 +1,77 @@
-## Welcome to GitHub Pages
+### GYAN —
 
-You can use the [editor on GitHub](https://github.com/anuniqs/redhat8-oracle-weblogic-installation/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+#### What is application server  —
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+An application server is a server that hosts applications. Application server frameworks are software frameworks for building application servers. An application server framework provides both facilities to create web applications and a server environment to run them.
 
-### Markdown
+#### What is administration server  —
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Administration Server is a WebLogic Server instance that maintains configuration data for a domain.
 
-```markdown
-Syntax highlighted code block
+#### What is managed server —
 
-# Header 1
-## Header 2
-### Header 3
+Managed Server is an instance of your WebLogic server that is running on JVM and has its own configuration.
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Java installation (Oracle Java) —
 
-### Jekyll Themes
+**Download site address -** http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/anuniqs/redhat8-oracle-weblogic-installation/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Which is - jdk-15.0.1_linux-x64_bin.tar.gz
 
-### Support or Contact
+[anup@192 ~]$ java -version
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Or,
+
+[anup@192 ~]$ /home/anup/java-15/bin/java -version
+
+```
+java version "15.0.1" 2020-10-20
+Java(TM) SE Runtime Environment (build 15.0.1+9-18)
+Java HotSpot(TM) 64-Bit Server VM (build 15.0.1+9-18, mixed mode, sharing)
+```
+
+### Weblogic installation — 
+
+**Download Site address -** https://www.oracle.com/middleware/technologies/fusionmiddleware-downloads.html
+
+Which is - "fmw_14.1.1.0.0_wls_lite_Disk1_1of1.zip"
+
+[anup@192 ~]$ unzip fmw_14.1.1.0.0_wls_lite_Disk1_1of1.zip
+
+[anup@192 ~]$ java -jar fmw_14.1.1.0.0_wls_lite_generic.jar
+
+[root@192 ~]# sudo firewall-cmd --state
+
+[root@192 ~]# sudo systemctl stop firewalld
+
+[root@192 ~]# sestatus
+
+[root@192 ~]# setenforce 0
+
+```
+```
+
+### Start Weblogic Server —
+
+[anup@192 ~]$ cd /home/anup/Oracle/Middleware/Oracle_Home/user_projects/domains/base_domain
+
+[anup@192 base_domain]$ ./bin/startWebLogic.sh
+
+http://192.168.43.165:7001/console/
+
+```
+UserName - What we set on configuring time (weblogic)
+Password - What we set on configuring time (Password+987*)
+```
+
+```
+```
+
+### Configuring Oracle Weblogic Server —
+
+[anup@192 ~]$ cd /home/anup/Oracle/Middleware/Oracle_Home/oracle_common/common/
+
+[anup@192 common]$ ./bin/config.sh
