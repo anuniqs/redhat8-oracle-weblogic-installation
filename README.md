@@ -48,8 +48,10 @@ Which is - "fmw_14.1.1.0.0_wls_lite_Disk1_1of1.zip"
 [root@192 ~]# sestatus
 
 [root@192 ~]# setenforce 0
+
 ```
 ```
+
 ### Start Weblogic Server —
 
 [anup@192 ~]$ cd /home/anup/Oracle/Middleware/Oracle_Home/user_projects/domains/base_domain
