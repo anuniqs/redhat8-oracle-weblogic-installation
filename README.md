@@ -13,7 +13,7 @@ Administration Server is a WebLogic Server instance that maintains configuration
 Managed Server is an instance of your WebLogic server that is running on JVM and has its own configuration.
 
 
-#### Java installation (Oracle Java) —
+### Java installation (Oracle Java) —
 
 **Download site address -** http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
@@ -31,7 +31,7 @@ Java(TM) SE Runtime Environment (build 15.0.1+9-18)
 Java HotSpot(TM) 64-Bit Server VM (build 15.0.1+9-18, mixed mode, sharing)
 ```
 
-#### Weblogic installation — 
+### Weblogic installation — 
 
 **Download Site address -** https://www.oracle.com/middleware/technologies/fusionmiddleware-downloads.html
 
@@ -50,7 +50,7 @@ Which is - "fmw_14.1.1.0.0_wls_lite_Disk1_1of1.zip"
 [root@192 ~]# setenforce 0
 
 
-#### Start Weblogic Server —
+### Start Weblogic Server —
 
 [anup@192 ~]$ cd /home/anup/Oracle/Middleware/Oracle_Home/user_projects/domains/base_domain
 
@@ -63,7 +63,7 @@ UserName - What we set on configuring time (weblogic)
 Password - What we set on configuring time (Password+987*)
 ```
 
-#### Configuring Oracle Weblogic Server —
+### Configuring Oracle Weblogic Server —
 
 [anup@192 ~]$ cd /home/anup/Oracle/Middleware/Oracle_Home/oracle_common/common/
 
