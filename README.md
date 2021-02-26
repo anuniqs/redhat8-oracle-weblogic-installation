@@ -70,3 +70,7 @@ Password - What we set on configuring time (Password+987*)
 [anup@192 ~]$ cd /home/anup/Oracle/Middleware/Oracle_Home/oracle_common/common/
 
 [anup@192 common]$ ./bin/config.sh
+
+.
+  
+**@ By — Anup Kumar Mondal**
